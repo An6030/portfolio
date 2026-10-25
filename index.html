@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anshuman Shukla </title>
+  <title>Anshuman Shukla</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="chatbot.css">
 </head>
@@ -11,49 +11,74 @@
   <header class="site-header">
     <p class="eyebrow">Personal Profile</p>
     <h1>Anshuman Shukla</h1>
-    <p class="tagline">PLACEHOLDER Short role or tagline, for example Frontend Developer</p>
+    <p class="tagline">AI Engineer</p>
   </header>
 
   <main>
     <section class="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About</h2>
       <p>
-        PLACEHOLDER Write a short introduction about yourself here. Mention what you do,
-        what you enjoy building, and a little about your background.
+        I'm a second-year B.Tech student in Artificial Intelligence and Data Science
+        at JECRC University. I enjoy building practical projects that combine
+        clean web interfaces with intelligent features.
       </p>
       <p>
-        PLACEHOLDER Add a second sentence about your current focus, location, or what you
-        are looking for next.
+        Right now I'm focused on strengthening my skills in Python, Java and AI
+        while building real projects, and I'm open to learning opportunities
+        and collaborations.
       </p>
     </section>
 
     <section class="skills" aria-labelledby="skills-heading">
       <h2 id="skills-heading">Skills</h2>
       <ul>
-        <li>PLACEHOLDER Skill one</li>
-        <li>PLACEHOLDER Skill two</li>
-        <li>PLACEHOLDER Skill three</li>
-        <li>PLACEHOLDER Skill four</li>
-        <li>PLACEHOLDER Skill five</li>
+        <li>HTML/CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>UI Design</li>
       </ul>
     </section>
 
     <section class="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
-      <ul>
-        <li>
-          <a href="https://example.com/placeholder-project-one">PLACEHOLDER Project One</a>
-          <p>PLACEHOLDER Brief description of project one and what it demonstrates.</p>
+
+      <div class="project-search">
+        <label for="projectSearch" class="visually-hidden">Search projects</label>
+        <input
+          type="search"
+          id="projectSearch"
+          placeholder="Search projects by name or technology (e.g. Python, Quiz, Book)"
+          autocomplete="off"
+        >
+        <p id="projectCount" class="project-count" role="status" aria-live="polite"></p>
+      </div>
+
+      <ul id="projectList">
+        <li class="project-item" data-tags="python factorial fibonacci dictionary readme github">
+          <a href="https://github.com/An6030/.-Python-Programs-Collection.git">Python Programs Collection</a>
+          <p>A set of Python programs covering factorial, Fibonacci and structure-to-dictionary conversion, with an updated README in the repository.</p>
         </li>
-        <li>
-          <a href="https://example.com/placeholder-project-two">PLACEHOLDER Project Two</a>
-          <p>PLACEHOLDER Brief description of project two and the tools you used.</p>
+        <li class="project-item" data-tags="python ai code improvement refactor">
+          <a href="https://github.com/An6030/Messy-Python-Code-.git">Messy Python Code Improvement</a>
+          <p>A messy Python script cleaned up and improved with the help of AI assistance.</p>
         </li>
-        <li>
-          <a href="https://example.com/placeholder-project-three">PLACEHOLDER Project Three</a>
-          <p>PLACEHOLDER Brief description of project three and the outcome.</p>
+        <li class="project-item" data-tags="cursor ai bug fixing debugging python">
+          <a href="https://github.com/An6030/Messy-Python-Code-.git">Bug Fixing Using Cursor AI</a>
+          <p>A buggy program identified and corrected using Cursor AI.</p>
+        </li>
+        <li class="project-item" data-tags="quiz interactive web application javascript html css">
+          <a href="file:///C:/Users/user/Desktop/quiz/index.html">Interactive Quiz Application</a>
+          <p>An interactive quiz application built during Lecture 10.</p>
+        </li>
+        <li class="project-item" data-tags="book reading list web application deployed javascript html css">
+          <a href="https://reading-list-app-delta.vercel.app/">Book Reading List Application</a>
+          <p>A reading list application built during Lecture 11, with an updated README that includes the deployed link.</p>
         </li>
       </ul>
+
+      <p id="noResults" class="no-results" hidden>
+        No projects match your search. Try "Python", "Quiz" or "Book".
+      </p>
     </section>
   </main>
   <section id="weather">
@@ -105,8 +130,9 @@
         classroom demonstration only.
       </p>
   </section>
+  
   <footer class="site-footer">
-    <p>PLACEHOLDER Your Name — contact at PLACEHOLDER you@example.com</p>
+    <p>Anshuman Shukla — contact at <a href="mailto:anshumanshukl1@gmail.com">anshumanshukl1@gmail.com</a></p>
   </footer>
   <button id="themeToggle">Switch to Dark Mode</button>
   <script src="script.js"></script>

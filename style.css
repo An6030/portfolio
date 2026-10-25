@@ -21,6 +21,7 @@ body {
   background-color: #222;
   color: white;
 }
+
 #weather {
   max-width: 500px;
   margin: 40px auto;
@@ -40,6 +41,7 @@ body {
 #weatherResult {
   margin-top: 20px;
 }
+
 .site-header,
 main,
 .site-footer {
@@ -134,8 +136,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    transform: scale(1.02);
+  text-decoration: underline;
+  transform: scale(1.02);
 }
 
 .projects a:focus {
@@ -145,6 +147,76 @@ a:hover {
 .projects p {
   margin: 0.4rem 0 0;
   color: #3d5a80;
+}
+
+/* ---------- Project search ---------- */
+.project-search {
+  margin: 0 0 1.25rem;
+}
+
+.project-search input[type="search"] {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #1a365d;
+  background: #ffffff;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+}
+
+.project-search input[type="search"]::placeholder {
+  color: #6b7f99;
+}
+
+.project-search input[type="search"]:focus {
+  outline: 2px solid #1a4b8c;
+  outline-offset: 2px;
+}
+
+.project-count {
+  margin: 0.4rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #3d5a80;
+}
+
+.no-results {
+  margin: 1rem 0 0;
+  font-style: italic;
+  color: #3d5a80;
+}
+
+.projects li[hidden],
+.no-results[hidden] {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Search box in dark mode */
+.dark-mode .project-search input[type="search"] {
+  background: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #c9a227;
+}
+
+.dark-mode .project-search input[type="search"]::placeholder {
+  color: #aaa;
+}
+
+.dark-mode .project-count,
+.dark-mode .no-results {
+  color: #ccc;
 }
 
 .site-footer {
